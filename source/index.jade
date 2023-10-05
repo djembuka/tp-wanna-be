@@ -1,0 +1,34 @@
+extends ./layouts/main.jade
+
+block title
+  title Main page | seller
+
+block content
+
+  .container-fluid
+    
+    hr.i-size-L
+    hr.i-size-L
+    hr.i-size-L
+    
+    h1 Seller
+    
+    h2 GUI
+    ul
+      li
+        a( href="/gui/h1-h6/" ) Заголовки h1-h6
+    
+    h2 Каталог
+    ul
+      li
+        a( href="/catalog/" ) Catalog
+      li
+        a( href="/catalog/?sort=search" ) Catalog (результаты поиска, скролл)
+      li
+        a( href="/catalog/landing-page/?sort=search" ) Catalog landing page (по результатам поиска, без скролла)
+      li
+        a( href="/catalog/detail/" ) Catalog detail
+      li
+        a( href="/catalog/detail-empty/" ) Catalog detail без ТП
+      li
+        a( href="/catalog/catalog-filter/" ) Catalog filter
